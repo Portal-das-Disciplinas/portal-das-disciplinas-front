@@ -6,8 +6,6 @@
     </div>
 </template>
 
-// lembrar de por a legenda
-
 <script>
 export default {
     name: 'Video',

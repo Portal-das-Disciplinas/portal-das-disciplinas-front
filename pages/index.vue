@@ -15,7 +15,7 @@
     </section>
 
     <section class="bg-alt">
-        <p>
+        <p class="text-justify mb-0">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni voluptatibus reiciendis eveniet facilis? Magni fugiat molestias dolore ipsam molestiae reprehenderit voluptas.
           Laboriosam, praesentium accusantium possimus amet odio autem. Nesciunt, in. Repudiandae nisi fugiat nulla a voluptates aliquam tempora dolorem quis enim! Quia deserunt itaque est asperiores! Animi itaque eos rerum reprehenderit?
           Vel quae, beatae quo fugit maxime assumenda provident eum dicta odio alias rerum molestias, dolor illo minima sint, at aliquid cupiditate! Dolorem ea, necessitatibus numquam tenetur eveniet rem ducimus dignissimos.
@@ -48,6 +48,7 @@
           Aspernatur tempora, dolores soluta, vitae expedita suscipit praesentium at est, fugit sapiente ullam veritatis doloribus in dignissimos voluptates cum quos cumque asperiores temporibus. Quisquam rem cumque qui perferendis quibusdam totam?
         </p>
     </section>
+    <Footer/>
   </div>
 </template>
 
