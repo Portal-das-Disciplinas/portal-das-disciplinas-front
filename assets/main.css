@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+
+
+/* General Assets */
+
+*{
+    font-family: 'Nunito', 'Hind', sans-serif;
+}
+
+:root{
+    --azul-primario: #014C8C;
+    --branco: #FFFFFF;
+    --grey-500: #6B7280;
+    --grey-600: #4B5563;
+    --grey-900: #111827;
+    --azul-links: #1155CC;
+}
+
+::selection{
+    background-color: var(--azul-links);
+    color: var(--branco);
+}
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--grey-600); 
+}
+
+/* classes estilizadas */
+
+.display-title{
+    font-weight: bolder;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 3.5rem;
+}
+
+.text-description{
+    color: var(--grey-600);
+    font-size: 1.2rem;
+}
+
+.bg-alt{
+    background-color: var(--azul-primario);
+}
+
+/* link classes +add coollinkclassanimation*/
+
+a{
+    text-decoration: none;
+}
+
+.NuxtLink{
+    color: var(--grey-500);
+    text-decoration: none;
+    transition: .6s;
+}
+
+.NuxtLink:hover{
+    text-decoration: none;
+    color: var(--azul-links);
+}
