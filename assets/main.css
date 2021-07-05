@@ -63,16 +63,14 @@ ul{
 .display-title{
     font-weight: bolder;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 69px;
-    line-height: 72px;
+    font-size: 50px;
     color: #1F2937;
 }
 
 .text-description{
     color: var(--grey-600);
     font-weight: normal;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 18px;
 }
 
 .bg-alt{

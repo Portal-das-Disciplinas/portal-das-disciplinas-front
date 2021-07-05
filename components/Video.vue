@@ -25,9 +25,11 @@ export default {
 
 <style scoped>
 
+/* conversar com henry sobre usar os cards do bootstrap */
+
 div{
     width: 725px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .video-description{

@@ -16,11 +16,25 @@
 
     <section class="bg-alt">
         <p class="text-justify mb-0">
-          <Card/>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni voluptatibus reiciendis eveniet facilis? Magni fugiat molestias dolore ipsam molestiae reprehenderit voluptas.
           Laboriosam, praesentium accusantium possimus amet odio autem. Nesciunt, in. Repudiandae nisi fugiat nulla a voluptates aliquam tempora dolorem quis enim! Quia deserunt itaque est asperiores! Animi itaque eos rerum reprehenderit?
-          
         </p>
+        <div class="d-flex align-items-center justify-content-center">
+          <Card-alt Professor="Francisco Carlos" Name="TI e Sociedade" Synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
+          <Card-alt Professor="Francisco Carlos" Name="TI e Sociedade" Synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
+          <Card-alt Professor="Francisco Carlos" Name="TI e Sociedade" Synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
+          <Card-alt Professor="Francisco Carlos" Name="TI e Sociedade" Synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center">
+
+          <Card name="Lorem Ipsum" synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
+          <Card name="Lorem Ipsum" synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
+          <Card name="Lorem Ipsum" synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
+          <Card name="Lorem Ipsum" synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
+        </div>
+
+
     </section>
     <Footer/>
   </div>
