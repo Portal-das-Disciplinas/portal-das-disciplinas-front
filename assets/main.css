@@ -17,6 +17,9 @@
     --grey-600: #4B5563;
     --grey-900: #111827;
     --azul-links: #1155CC;
+    --cinza-principal: #F7F7F7;
+    --preto-secundario: #091620;
+    --cinza-secundario: #6D6E70;
 }
 
 ::selection{
@@ -62,6 +65,7 @@ ul{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 69px;
     line-height: 72px;
+    color: #1F2937;
 }
 
 .text-description{
@@ -73,6 +77,21 @@ ul{
 
 .bg-alt{
     background-color: var(--azul-primario);
+}
+
+/* transition classes */
+
+.transition-2{
+    transition: .2s;
+}
+.transition-4{
+    transition: .4s;
+}
+.transition-6{
+    transition: .6s;
+}
+.transition-8{
+    transition: .8s;
 }
 
 /* link classes +add coollinkclassanimation*/

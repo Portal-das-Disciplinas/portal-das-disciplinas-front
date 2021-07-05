@@ -35,7 +35,7 @@
 }
 
 .footer{
-    height: 270px;
+    height: 200px;
     background-color: var(--branco);
 }
 
