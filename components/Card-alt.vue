@@ -9,7 +9,7 @@
             img-alt="Image"
             img-top
             >
-            <b-card-text>{{Synopsis}}</b-card-text>
+            <b-card-text class="text-justify">{{Synopsis}}</b-card-text>
             <b-button class="w-100 transition-4" variant="dark">Acessar</b-button>
         </b-card>
     </div>

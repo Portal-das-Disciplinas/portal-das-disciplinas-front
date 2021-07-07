@@ -1,7 +1,8 @@
+/* Imports */
+
 @import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
-
 
 
 /* General Assets */
@@ -10,55 +11,61 @@
     font-family: 'Nunito', 'Hind', sans-serif;
 }
 
+ul, li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Cores utilizadas no projeto */
+
 :root{
     --azul-primario: #014C8C;
+    --azul-links: #1155CC;
+    --azul-descricao: #80A6C6;
+
     --branco: #FFFFFF;
+    
     --grey-500: #6B7280;
     --grey-600: #4B5563;
     --grey-900: #111827;
-    --azul-links: #1155CC;
+    
     --cinza-principal: #F7F7F7;
-    --preto-secundario: #091620;
     --cinza-secundario: #6D6E70;
+    
+    --preto-secundario: #091620;
 }
+
+/* Definição de propriedades da página - Selection e Scrollbar */
+
+
+/* Selection */
 
 ::selection{
     background-color: var(--azul-links);
     color: var(--branco);
 }
 
-ul{
-    text-decoration: none;
-    list-style-type: none;
-}
-
-.text-justify{
-    text-align: justify;
-}
-
-
-/* Scrollbar */
+/* Scroll */
 
 ::-webkit-scrollbar {
     width: 10px;
 }
-  
-/* Track */
+
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
-   
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: #888; 
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: var(--grey-600); 
 }
 
 /* classes estilizadas */
+
+/* First Section */
 
 .display-title{
     font-weight: bolder;
@@ -73,23 +80,26 @@ ul{
     font-size: 18px;
 }
 
-.bg-alt{
-    background-color: var(--azul-primario);
+/* Second Section */
+
+.display-title-gallery{
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: var(--branco);
 }
 
-/* transition classes */
-
-.transition-2{
-    transition: .2s;
-}
-.transition-4{
-    transition: .4s;
-}
-.transition-6{
-    transition: .6s;
-}
-.transition-8{
-    transition: .8s;
+.gallery-description{
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--azul-descricao);
 }
 
 /* link classes +add coollinkclassanimation*/
@@ -107,4 +117,33 @@ a{
 .NuxtLink:hover{
     text-decoration: none;
     color: var(--azul-links);
+}
+
+/* Config classes - utilidades */
+
+.section-gap{
+    padding: 4rem 0;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.bg-alt{
+    background-color: var(--azul-primario);
+}
+
+/*  -- subset config -- transition classes */
+
+.transition-2{
+    transition: .2s;
+}
+.transition-4{
+    transition: .4s;
+}
+.transition-6{
+    transition: .6s;
+}
+.transition-8{
+    transition: .8s;
 }

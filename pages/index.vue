@@ -1,8 +1,7 @@
 <template>
   <div>
     <Navbar/>
-
-    <section class="mt-5 mb-5" >
+    <section class="mt-4 mb-5" >
       <b-container>
         <b-row>
           <h1 class="display-title text-center w-100">Portal das Disciplinas</h1>
@@ -14,27 +13,18 @@
       </b-container>
     </section>
 
-    <section class="bg-alt">
-        <p class="text-justify mb-0">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni voluptatibus reiciendis eveniet facilis? Magni fugiat molestias dolore ipsam molestiae reprehenderit voluptas.
-          Laboriosam, praesentium accusantium possimus amet odio autem. Nesciunt, in. Repudiandae nisi fugiat nulla a voluptates aliquam tempora dolorem quis enim! Quia deserunt itaque est asperiores! Animi itaque eos rerum reprehenderit?
-        </p>
-        <div class="d-flex align-items-center justify-content-center">
-          <Card-alt Professor="Francisco Carlos" Name="TI e Sociedade" Synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
-          <Card-alt Professor="Francisco Carlos" Name="TI e Sociedade" Synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
-          <Card-alt Professor="Francisco Carlos" Name="TI e Sociedade" Synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
-          <Card-alt Professor="Francisco Carlos" Name="TI e Sociedade" Synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
-        </div>
-
-        <div class="d-flex align-items-center justify-content-center">
-
-          <Card name="Lorem Ipsum" synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
-          <Card name="Lorem Ipsum" synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
-          <Card name="Lorem Ipsum" synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
-          <Card name="Lorem Ipsum" synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ex, libero at magnam asperiores nostrum similique aperiam magni"/>
-        </div>
-
-
+    <section class="bg-alt section-gap">
+		<b-container>
+			<b-row class="mb-5">
+				<h1 class="w-100 display-title-gallery">Disciplinas Cadastradas</h1>
+				<p class="gallery-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati possimus eos expedita eum veritatis quasi quae architecto exercitationem molestiae tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+			</b-row>
+			<b-row>
+				<div class="d-flex align-items-center justify-content-between flex-wrap align-content-lg-center">
+					<li v-for="item in items" :key="item"><Card-alt class="my-3" Professor="Francisco Carlos" Name="TI e Sociedade" Synopsis="Lorem ipsum dolor sit, amet tetur adipisicing elit. Amet dis cap diem"/><hr></li>
+				</div>
+			</b-row>
+		</b-container>
     </section>
     <Footer/>
   </div>
@@ -45,6 +35,7 @@ export default {
 
   data(){
     return{
+		items: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
     }
   }
 }
