@@ -102,6 +102,11 @@ ul, li{
     color: var(--azul-descricao);
 }
 
+.hr-cards{
+    background-color: var(--cinza-principal);
+    /* height: 1px; */
+}
+
 /* link classes +add coollinkclassanimation*/
 
 a{

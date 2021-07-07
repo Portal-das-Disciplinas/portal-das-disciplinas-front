@@ -21,7 +21,7 @@
 			</b-row>
 			<b-row>
 				<div class="d-flex align-items-center justify-content-between flex-wrap align-content-lg-center">
-					<li v-for="item in items" :key="item"><Card-alt class="my-3" Professor="Francisco Carlos" Name="TI e Sociedade" Synopsis="Lorem ipsum dolor sit, amet tetur adipisicing elit. Amet dis cap diem"/><hr></li>
+					<li v-for="item in items" :key="item"><Card-alt class="my-3" Professor="Francisco Carlos" Name="TI e Sociedade" Synopsis="Lorem ipsum dolor sit, amet tetur adipisicing elit. Amet dis cap diem"/><hr class="hr-cards"></li>
 				</div>
 			</b-row>
 		</b-container>

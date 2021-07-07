@@ -17,7 +17,7 @@
                 <hr>
                 <div class="d-flex justify-content-between w-100 mt-2 info-imd">
                     <div>&copy; Instituto Metrópole Digital. Natal, 2021. Todos os direitos reservados.</div>
-                    <div>Desenvolvido por: Equipe do <NuxtLink class="eqp-link" to="/">Portal das Disciplinas</NuxtLink></div>
+                    <div>Desenvolvido por: <NuxtLink class="eqp-link" to="/">Equipe do Portal das Disciplinas</NuxtLink></div>
                 </div>
             </b-row>
         </b-container>

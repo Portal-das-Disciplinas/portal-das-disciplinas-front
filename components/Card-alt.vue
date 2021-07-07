@@ -5,7 +5,7 @@
             footer-tag="footer"
             :title="Name"
             style="max-width: 15rem;"
-            img-src="https://placekitten.com/1280/720"
+            img-src="https://hongkong.imd.ufrn.br/filemanagerportal/source/2018/Novembro/Residência%20em%20TI_aula%20inaugural/Residência%20em%20TI_Aula%20inaugural_resuzida.jpg"
             img-alt="Image"
             img-top
             >

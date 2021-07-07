@@ -9,7 +9,7 @@
                         <div>+</div>
                         <b-icon icon="brightness-high-fill"></b-icon>
                     </div>
-                    <div>Instituto Metropole Digital - IMD</div>
+                    <div>Instituto Metrópole Digital - IMD</div>
                 </b-row>
             </b-container>
         </div>
