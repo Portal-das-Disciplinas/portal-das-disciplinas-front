@@ -7,7 +7,7 @@
                         <div>-</div>
                         <div>A</div>
                         <div>+</div>
-                        <b-icon icon="brightness-high-fill"></b-icon>
+                        <i class="fas fa-adjust"></i>
                     </div>
                     <div>Instituto Metrópole Digital - IMD</div>
                 </b-row>
@@ -95,6 +95,12 @@ ul li{
 .nav{
     width: 100%;
     background-color: var(--branco);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 720px){
+
 }
 
 </style>

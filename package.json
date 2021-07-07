@@ -14,5 +14,7 @@
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
+  }
 }

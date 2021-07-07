@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mx-1">
         <b-card
             :footer="Professor"
             footer-tag="footer"
