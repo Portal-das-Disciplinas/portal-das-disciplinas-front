@@ -1,5 +1,5 @@
 <template>
-    <div class="sticky-top shadow nav">
+    <div class="sticky-top shadow nav" :class="{active: this.toggle}">
         <div class="access-bar d-flex align-items-center">
             <b-container>
                 <b-row class="d-flex justify-content-between">
@@ -20,8 +20,9 @@
                     <div>
                         <NuxtLink class="NuxtLink" to="/"><b-img fluid src="../assets/img/imdlogo.png"></b-img></NuxtLink>
                     </div>
-
                     <div class="d-flex align-items-center">
+                        <button id="btn-mobile" @click="toggle = !toggle"><i class="fas fa-bars fa-2x"></i></button>
+                        {{toggle}}
                         <ul class="d-flex align-items-center">
                             <li><NuxtLink class="NuxtLink" to="/AAAAAAAAAAAAAAAAAAAAAAAAA"> Início</NuxtLink></li>
                             <li><NuxtLink class="NuxtLink" to="/"> Sobre & Colabore</NuxtLink></li>
@@ -33,17 +34,18 @@
         </b-container>
     </div>
 </template>
-
 <script>
+
 export default {
     name: 'Navbar',
 
     data(){
         return{
+            toggle: true
         }
     }
-    
 }
+
 </script>
 
 <style scoped>
@@ -97,10 +99,21 @@ ul li{
     background-color: var(--branco);
 }
 
+#btn-mobile{
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    color: var(--grey-600);
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 720px){
-
+    #btn-mobile{
+        display: block;
+    }
 }
 
 </style>
