@@ -1,6 +1,6 @@
 <template>
-    <div class="sticky-top shadow nav" :class="{active: this.toggle}">
-        <div class="access-bar d-flex align-items-center">
+    <div class="sticky-top shadow nav">
+        <div class="access-bar d-flex align-items-center md-hide-nav">
             <b-container>
                 <b-row class="d-flex justify-content-between">
                     <div class="d-flex justify-content-between access-div align-items-center">
@@ -20,11 +20,10 @@
                     <div>
                         <NuxtLink class="NuxtLink" to="/"><b-img fluid src="../assets/img/imdlogo.png"></b-img></NuxtLink>
                     </div>
-                    <div class="d-flex align-items-center">
-                        <button id="btn-mobile" @click="toggle = !toggle"><i class="fas fa-bars fa-2x"></i></button>
-                        {{toggle}}
+                    <button id="btn-mobile" @click="toggle = !toggle"><i class="fas fa-bars fa-2x"></i></button>
+                    <div id="menu-holder" class="d-flex align-items-center" :class="{active: this.toggle}">
                         <ul class="d-flex align-items-center">
-                            <li><NuxtLink class="NuxtLink" to="/AAAAAAAAAAAAAAAAAAAAAAAAA"> Início</NuxtLink></li>
+                            <li><NuxtLink class="NuxtLink" to="/"> Início</NuxtLink></li>
                             <li><NuxtLink class="NuxtLink" to="/"> Sobre & Colabore</NuxtLink></li>
                         </ul>
                         <b-button class="access-button">Acesso</b-button>
@@ -41,9 +40,9 @@ export default {
 
     data(){
         return{
-            toggle: true
+            toggle: false
         }
-    }
+    },
 }
 
 </script>
@@ -97,6 +96,7 @@ ul li{
 .nav{
     width: 100%;
     background-color: var(--branco);
+    z-index: 100000;
 }
 
 #btn-mobile{
@@ -113,6 +113,42 @@ ul li{
 @media screen and (max-width: 720px){
     #btn-mobile{
         display: block;
+    }
+
+    #menu-holder{
+        display: block !important;
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        right: 0;
+        background-color: var(--cinza-principal);
+        z-index: 1000;
+        height: 0px;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #menu-holder li, .access-button{
+        width: 100%;
+        text-align: center;
+        font-size: 1.4rem;
+        margin: 1rem 0;
+        border-bottom: 1px solid rgba(133, 133, 133, 0.5);
+    }
+    
+    #menu-holder.active{
+        display: block !important;
+        height: calc(100vh - 80px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu-holder ul{
+        display: block !important;
+    }
+
+    .md-hide-nav{
+        display: none !important;
     }
 }
 
