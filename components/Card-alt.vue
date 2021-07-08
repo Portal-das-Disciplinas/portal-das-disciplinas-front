@@ -12,6 +12,7 @@
             <b-card-text class="text-justify">{{Synopsis}}</b-card-text>
             <b-button class="w-100 transition-4" variant="dark">Acessar</b-button>
         </b-card>
+        <hr class="hr-cards">
     </div>
 </template>
 

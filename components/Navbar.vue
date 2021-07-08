@@ -17,10 +17,13 @@
         <b-container>
             <b-row>
                 <div class="main-bar d-flex justify-content-between align-items-center">
-                    <div>
+                    <div id="imd-logo">
                         <NuxtLink class="NuxtLink" to="/"><b-img fluid src="../assets/img/imdlogo.png"></b-img></NuxtLink>
                     </div>
-                    <button id="btn-mobile" @click="toggle = !toggle"><i class="fas fa-bars fa-2x"></i></button>
+                    <button id="btn-mobile" @click="toggle = !toggle">
+                        <i v-if="!toggle" class="fas fa-bars fa-2x"></i>
+                        <i v-else class="fas fa-times fa-2x"></i>
+                    </button>
                     <div id="menu-holder" class="d-flex align-items-center" :class="{active: this.toggle}">
                         <ul class="d-flex align-items-center">
                             <li><NuxtLink class="NuxtLink" to="/"> Início</NuxtLink></li>
@@ -152,4 +155,14 @@ ul li{
     }
 }
 
+@media screen and (max-width: 590px) {
+    
+    #imd-logo{
+        margin: 0 0 0 1rem;
+    }
+    
+    #btn-mobile{
+        margin: 0 1rem 0 0;
+    }
+}
 </style>
