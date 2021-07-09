@@ -22,6 +22,8 @@ ul, li{
     --azul-primario: #014C8C;
     --azul-links: #1155CC;
     --azul-descricao: #80A6C6;
+    --azul-waves: #427fe9;
+    --azul-waves-alt: #012C77;
 
     --branco: #FFFFFF;
     
@@ -107,6 +109,19 @@ ul, li{
     background-color: var(--cinza-principal);
 }
 
+
+/* Second section wave container + waves SVG controllers's classes */
+
+.wave-container{
+    display: block;
+}
+
+.wave-top{
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
 /* link classes +add coollinkclassanimation*/
 
 a{
@@ -151,4 +166,18 @@ a{
 }
 .transition-8{
     transition: .8s;
+}
+
+/* Utilities bootstrap not has */
+
+.p-absolute{
+    position: absolute;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.index-100{
+    z-index: 100;
 }
