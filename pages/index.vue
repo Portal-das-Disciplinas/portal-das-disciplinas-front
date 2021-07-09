@@ -74,4 +74,10 @@ export default {
       margin: 0 auto;
     }
   }
+
+  @media screen and (max-width: 545px){
+    .text-description{
+      margin: 1rem;
+    }
+  }
 </style>
