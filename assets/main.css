@@ -83,6 +83,10 @@ ul, li{
     font-size: 18px;
 }
 
+.video-container, .video-home{
+    margin: 0 auto !important;
+}
+
 /* Second Section */
 
 .display-title-gallery{
@@ -181,3 +185,8 @@ a{
 .index-100{
     z-index: 100;
 }
+
+.d-grid{
+    display: grid;
+}
+
