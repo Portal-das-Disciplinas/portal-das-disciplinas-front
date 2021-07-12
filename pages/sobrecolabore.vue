@@ -24,28 +24,28 @@
             </b-row>
 
             <b-row>
-                <div class="accordion w-100 teste" role="tablist">
-                    <b-card no-body class="mb-1 teste">
+                <div class="accordion w-100" role="tablist">
+                    <b-card no-body class="mb-1 br-20px">
 
-                        <b-card-header header-tag="header" class="p-1" role="tab">
+                        <b-card-header header-tag="header" class="p-2" role="tab">
                             <b-button block v-b-toggle.accordion-1 class="accordion-colab-btn transition-4">Colaboradores anteriores</b-button>
                         </b-card-header>
 
 
                         <!-- COLABORADORES -->
 
-                        <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
+                        <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
                             <b-card-body>
-                              <b-card-text>I start opened because <code>visible</code> is <code>true</code></b-card-text>
-                              <b-card-text>asd</b-card-text>
+                              <b-card-text>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga laudantium minima voluptates hic ipsa nobis odio culpa corporis aliquam laborum.</b-card-text>
+                              <b-card-text>Algo a mais</b-card-text>
                             </b-card-body>
                             <hr>
                         </b-collapse>
 
-                        <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
+                        <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
                             <b-card-body>
-                              <b-card-text>asdfasd <code>visible</code> is <code>true</code></b-card-text>
-                              <b-card-text>asd</b-card-text>
+                              <b-card-text>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga laudantium minima voluptates hic ipsa nobis odio culpa corporis aliquam laborum.</b-card-text>
+                              <b-card-text>Algo a mais</b-card-text>
                             </b-card-body>
                         </b-collapse>
 
@@ -72,7 +72,7 @@ export default {
     .accordion-colab-btn{
         background-color: var(--cinza-bg);
         color: var(--azul-primario);
-        outline: hidden;
+        outline: none;
         border: none;
 
         /* font config */
@@ -82,10 +82,7 @@ export default {
         line-height: 32px;
         border-radius: 30px;
     }
-    .teste{
-        border-radius: 40px !important;
-        margin-top: 2rem;
-    }
+
     .accordion-colab-btn:hover{
         background-color: var(--grey-900);
         color: var(--branco);
