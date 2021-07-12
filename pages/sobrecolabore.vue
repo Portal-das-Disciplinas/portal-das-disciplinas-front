@@ -28,10 +28,14 @@
                     <b-card no-body class="mb-1 br-20px">
 
                         <b-card-header header-tag="header" class="p-2" role="tab">
-                            <b-button block v-b-toggle.accordion-1 class="accordion-colab-btn transition-4">Colaboradores anteriores</b-button>
+                            <b-button block v-b-toggle.accordion-1 @click="visible = !visible" class="accordion-colab-btn transition-4 br-30px d-flex justify-content-between align-items-center px-4">
+                                <div>Colaboradores anteriores</div>
+                                <i v-if="visible" class="fas fa-caret-down"></i>
+                                <i v-else class="fas fa-caret-up"></i>
+                            </b-button>
                         </b-card-header>
 
-
+                        
                         <!-- COLABORADORES -->
 
                         <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
@@ -60,6 +64,12 @@
 
 <script>
 export default {
+
+    data(){
+        return{
+            visible: true
+        }
+    }
     
 }
 </script>
@@ -80,11 +90,11 @@ export default {
         font-style: normal;
         font-size: 18px;
         line-height: 32px;
-        border-radius: 30px;
     }
 
     .accordion-colab-btn:hover{
         background-color: var(--grey-900);
         color: var(--branco);
     }
+
 </style>

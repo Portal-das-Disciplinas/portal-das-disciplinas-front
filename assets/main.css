@@ -197,6 +197,10 @@ a{
     border-radius: 40px !important;
 }
 
+.br-30px{
+    border-radius: 30px !important;
+}
+
 .br-20px{
     border-radius: 20px !important;
 }
