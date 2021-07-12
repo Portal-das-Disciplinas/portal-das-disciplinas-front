@@ -24,8 +24,8 @@
       </div>
 		<b-container>
 			<b-row class="mb-5">
-        <div class="index-100 mt-5">
-          <h1 class="w-100 display-title-gallery">Disciplinas Cadastradas</h1>
+        <div class="index-100 mt-5 w-100">
+          <h1 class="display-title-gallery">Disciplinas Cadastradas</h1>
           <p class="gallery-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati possimus eos expedita eum veritatis quasi quae architecto exercitationem molestiae tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
         </div>
 			</b-row>
@@ -58,13 +58,7 @@ export default {
 <style>
 
   @import '../assets/main.css';
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-
+  
   /* Media Queries */
 
   @media screen and (max-width: 490px){
