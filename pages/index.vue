@@ -31,9 +31,7 @@
 			</b-row>
       <hr class="index-100 p-relative index-100 hr-cards w-100">
 			<b-row>
-				<div id="cards-div" class="d-flex align-items-center justify-content-between flex-wrap align-content-lg-center">
-					<li v-for="item in items" :key="item"><Card-alt class="my-3" Professor="Francisco Carlos" Name="TI e Sociedade" Synopsis="Lorem ipsum dolor sit, amet tetur adipisicing elit. Amet dis cap diem"/></li>
-				</div>
+				<b-col cols='4' v-for="item in items" :key="item" class=''><Card-alt class="my-3" Professor="Francisco Carlos" Name="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati possimus eos expedita eum veritatis quasi quae architecto exercitationem molestiae tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit." Synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati possimus eos expedita eum veritatis quasi quae architecto exercitationem molestiae tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit."/></b-col>
 			</b-row>
 		</b-container>
     <div class="wave-container">

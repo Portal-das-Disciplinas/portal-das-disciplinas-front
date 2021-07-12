@@ -1,18 +1,17 @@
 <template>
-    <div class="mx-1">
+    <div>
         <b-card
             :footer="Professor"
             footer-tag="footer"
-            :title="Name"
-            style="max-width: 15rem;"
-            img-src="https://hongkong.imd.ufrn.br/filemanagerportal/source/2018/Novembro/Residência%20em%20TI_aula%20inaugural/Residência%20em%20TI_Aula%20inaugural_resuzida.jpg"
+            :title="truncText(Name, 55)"
+            img-src="https://placekitten.com/1280/720"
             img-alt="Image"
             img-top
+            class="card-alt"
             >
-            <b-card-text class="text-justify">{{Synopsis}}</b-card-text>
+            <b-card-text>{{truncText(Synopsis, 126)}}</b-card-text>
             <b-button class="w-100 transition-4" variant="dark">Acessar</b-button>
         </b-card>
-        <hr class="hr-cards">
     </div>
 </template>
 
@@ -33,6 +32,15 @@ export default {
             type: String,
             require: true
         }
+    },
+    methods: {
+        truncText(text, maxLength){
+            if(text.length>=maxLength){
+                return text.substring(0, maxLength)+'...';
+            }
+            return text
+            
+        }
     }
 
 }
@@ -41,6 +49,36 @@ export default {
 <style scoped>
 img{
     max-width: 100%;
-    max-height: 150px;
+    min-height: 45%;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
+
+.btn{
+    background-color: var(--azul-primario);
+    
+}
+
+.card{
+    border: 0;
+    border-radius: 0.5rem;
+    min-height: 32rem;
+    max-height: 32rem;
+    max-width: 100%;
+    
+}
+
+.card-body{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.card-title{
+    
+}
+
+
+
 </style>
