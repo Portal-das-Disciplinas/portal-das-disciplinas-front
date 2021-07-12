@@ -27,7 +27,7 @@
                     <div id="menu-holder" class="d-flex align-items-center" :class="{active: this.toggle}">
                         <ul class="d-flex align-items-center">
                             <li><NuxtLink class="NuxtLink" to="/"> Início</NuxtLink></li>
-                            <li><NuxtLink class="NuxtLink" to="/"> Sobre & Colabore</NuxtLink></li>
+                            <li><NuxtLink class="NuxtLink" to="/sobrecolabore"> Sobre & Colabore</NuxtLink></li>
                         </ul>
                         <b-button class="access-button">Acesso</b-button>
                     </div>

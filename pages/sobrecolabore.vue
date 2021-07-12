@@ -1,4 +1,7 @@
 <template>
+
+    <div>
+    </div>
     
 </template>
 
@@ -9,5 +12,9 @@ export default {
 </script>
 
 <style scoped>
+
+@import '../assets/main.css';
+
+
 
 </style>
