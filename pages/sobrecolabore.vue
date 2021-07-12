@@ -1,7 +1,7 @@
 <template>
-
     <div>
         <Navbar/>
+
         <b-container>
             <b-row>
                 <div>
@@ -15,7 +15,7 @@
                     </div>
 
                     <ul>
-                        Lista de emails para contato
+                        <b>Lista de emails para contato</b>
                         <li>eugenio@imd.ufrn.br</li>
                         <li>pedrogab96@gmail.com</li>
                         <li>victor_brandao@outlook.com</li>
@@ -30,12 +30,12 @@
                         <b-card-header header-tag="header" class="p-2" role="tab">
                             <b-button block v-b-toggle.accordion-1 @click="visible = !visible" class="accordion-colab-btn transition-4 br-30px d-flex justify-content-between align-items-center px-4">
                                 <div>Colaboradores anteriores</div>
-                                <i v-if="visible" class="fas fa-caret-down"></i>
-                                <i v-else class="fas fa-caret-up"></i>
+                                <i v-if="visible" class="fas fa-caret-down fa-lg"></i>
+                                <i v-else class="fas fa-caret-up fa-lg"></i>
                             </b-button>
                         </b-card-header>
 
-                        
+
                         <!-- COLABORADORES -->
 
                         <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
@@ -53,13 +53,14 @@
                             </b-card-body>
                         </b-collapse>
 
+                        <!-- -------------- -->
+                        
                     </b-card>
                 </div>
             </b-row>
         </b-container>
         <Footer/>
     </div>
-    
 </template>
 
 <script>
@@ -93,8 +94,8 @@ export default {
     }
 
     .accordion-colab-btn:hover{
-        background-color: var(--grey-900);
-        color: var(--branco);
+        background-color: var(--azul-primario);
+        color: var(--cinza-bg);
     }
 
 </style>
