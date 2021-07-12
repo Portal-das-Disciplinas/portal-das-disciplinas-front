@@ -1,6 +1,5 @@
 <template>
     <div class="sticky-top shadow nav">
-        <script src="https://kit.fontawesome.com/fae7e0756f.js" crossorigin="anonymous"></script>
         <div class="access-bar d-flex align-items-center md-hide-nav">
             <b-container>
                 <b-row class="d-flex justify-content-between">
