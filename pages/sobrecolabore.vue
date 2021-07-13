@@ -1,7 +1,7 @@
 <template>
     <div>
         <Navbar/>
-
+        <!-- FALTA FAZER THUMBNAIL COM IMAGEM DO IMD - FALAR COM HENRY -->
         <b-container class="mt-5">
             <b-row>
                 <div class="col-md-6">
