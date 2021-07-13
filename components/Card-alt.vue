@@ -81,7 +81,7 @@ div{
 }
 
 button:hover{
-    background-color: var(--azul-waves-alt);
+    background-color: var(--azul-links);
 }
 
 /* .card-title{
