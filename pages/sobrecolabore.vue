@@ -13,7 +13,7 @@
                         <h1>Colabore</h1>
                         <p class="text-justify mt-3">Caso tenha interesse em colaborar na adição de novas funcionalidades do site como sistema de classificações dinâmicos, refinamento de mecanismos de busca, interação com o portal de dados abertos da UFRN para recuperação de índices de aprovação de disciplinas, implementação de fóruns no portal, entre outros, por favor, entre em contato conosco.</p>
                     </div>
-                    <div>
+                    <div class="break-word">
                         <b>Lista de emails para contato</b>
                         <ul class="ml-3">
                             <li>eugenio@imd.ufrn.br</li>
