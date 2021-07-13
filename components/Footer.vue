@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <b-container class="h-100 d-flex flex-column justify-content-around">
-            <b-row id="info-div" class="mt-5 d-flex justify-content-between align-items-center">
+            <b-row id="info-div" class="d-flex justify-content-between align-items-center">
                 <div id="section1">
                     <div class="d-flex align-items-center">
                         <b-img fluid id="imd-footer" src="../assets/img/imd-footer 2.png"></b-img>
@@ -36,7 +36,7 @@
 }
 
 .footer{
-    height: 200px;
+    height: auto;
     background-color: var(--branco);
 }
 
@@ -103,6 +103,7 @@ hr{
     #info-div{
         flex-direction: column;
         text-align: center;
+        margin-top: 2rem;
     }
 
     #ufrn-logo{

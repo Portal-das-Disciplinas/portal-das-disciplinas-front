@@ -2,7 +2,7 @@
     <div>
         <Navbar/>
 
-        <b-container>
+        <b-container class="mt-5">
             <b-row>
                 <div class="col-md-6">
                     <div>
@@ -24,7 +24,9 @@
                 </div>
 
                 <!-- Prof + Devs grid -->
-                <div class="col-md-6 d-flex flex-column align-items-center">
+
+                <!-- Conversar com Henry sobre links para Github/Linkedin/Ig -->
+                <div id="devsGrid" class="col-md-6 d-flex flex-column align-items-center">
                     <Professor nome="Eugênio Paccelli" role="orientador"/>
                     <div class="d-flex flex-wrap justify-content-center">
                         <Dev nome="IMD Dev" devEnd="back-end"/>
@@ -40,7 +42,7 @@
 
             </b-row>
 
-            <b-row>
+            <b-row id="acc-row">
                 <div class="accordion w-100" role="tablist">
                     <b-card no-body class="mb-1 br-20px">
 
@@ -53,7 +55,7 @@
                         </b-card-header>
 
 
-                        <!-- COLABORADORES -->
+                        <!-- COLABORADORES ANTERIORES -->
 
                         <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
                             <b-card-body>
@@ -131,5 +133,21 @@ export default {
         font-weight: bold;
         font-size: 40px;
         line-height: 48px;
+    }
+
+    #devsGrid{
+        margin-bottom:2rem;
+    }
+
+    #acc-row{
+        margin-bottom: 3rem;
+    }
+
+    /* Media Queries */
+
+    @media screen and (max-width: 768px){
+        #devsGrid{
+            margin: 1.8rem 0;
+        }
     }
 </style>
