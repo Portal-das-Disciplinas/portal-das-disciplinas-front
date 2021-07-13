@@ -10,7 +10,7 @@
             class="card-alt"
             title-tag='h6'
             >
-            <b-card-text>{{truncText(Synopsis, 126)}}</b-card-text>
+            <b-card-text class="text-justify">{{truncText(Synopsis, 126)}}</b-card-text>
             <b-button class="w-100 transition-4" variant="dark">Acessar</b-button>
         </b-card>
     </div>
@@ -59,11 +59,6 @@ img{
     
 }
 
-div{
-    /* responsividade dos cards */
-    margin: 0 auto;
-}
-
 .card{
     border: 0;
     border-radius: 0.5rem;
@@ -78,6 +73,15 @@ div{
     flex-direction: column;
     justify-content: space-between;
     
+}
+
+div{
+    /* responsividade dos cards */
+    margin: 0 auto;
+}
+
+button:hover{
+    background-color: var(--azul-waves-alt);
 }
 
 /* .card-title{

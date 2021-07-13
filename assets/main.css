@@ -263,3 +263,6 @@ a{
     border-radius: 20px !important;
 }
 
+.break-word{
+    word-wrap: break-word;
+}

@@ -16,7 +16,7 @@
             <b-row>
                 <hr>
                 <div id="eqp-div" class="d-flex justify-content-between w-100 mt-2 pb-3 info-imd">
-                    <div>&copy; Instituto Metrópole Digital. Natal, 2021. Todos os direitos reservados.</div>
+                    <div class="mt-1">&copy; Instituto Metrópole Digital. Natal, 2021. Todos os direitos reservados.</div>
                     <div id="eqp-link">Desenvolvido por: <NuxtLink class="eqp-link" to="/sobrecolabore">Equipe do Portal das Disciplinas</NuxtLink></div>
                 </div>
             </b-row>
@@ -141,6 +141,10 @@ hr{
 
     .eqp-link:hover{
         color: var(--azul-waves-alt) !important;
+    }
+
+    #info-div{
+        margin-top: 1rem !important;
     }
 }
 

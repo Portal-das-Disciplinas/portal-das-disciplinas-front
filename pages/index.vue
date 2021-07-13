@@ -8,7 +8,7 @@
     <section class="mt-5 mb-5" >
       <b-container>
         <b-row>
-          <h1 class="display-title display text-center w-100">Portal das Disciplinas LASCOU</h1>
+          <h1 class="display-title display text-center w-100 break-word">Portal das Disciplinas</h1>
           <p class="text-description grey-500 larger-p text-center mt-3 ">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui sequi iusto sed possimus quos accusamus necessitatibus expedita excepturi, eius mollitia, dolorum odit quas nemo libero saepe architecto repudiandae sint nostrum? 
           </p>
@@ -28,7 +28,7 @@
 		<b-container>
 			<b-row class="mb-5">
         <div class="index-100 mt-6 w-100">
-          <h1 class="display-title-gallery ">Disciplinas Cadastradas</h1>
+          <h1 class="display-title-gallery break-word">Disciplinas Cadastradas</h1>
           <p class="gallery-description mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati possimus eos expedita eum veritatis quasi quae architecto exercitationem molestiae tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
         </div>
 			</b-row>
