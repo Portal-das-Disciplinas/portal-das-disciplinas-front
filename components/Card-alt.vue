@@ -8,6 +8,7 @@
             img-alt="Image"
             img-top
             class="card-alt"
+            title-tag='h6'
             >
             <b-card-text>{{truncText(Synopsis, 126)}}</b-card-text>
             <b-button class="w-100 transition-4" variant="dark">Acessar</b-button>

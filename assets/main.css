@@ -8,7 +8,7 @@
 /* General Assets */
 
 *{
-    font-family: 'Nunito', 'Hind', sans-serif;
+    font-family: 'Nunito Sans', 'Hind', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,6 +17,14 @@
 ul, li{
     text-decoration: none;
     list-style-type: none;
+}
+
+body{
+    background-color: #F8F7F6;
+}
+
+html{
+    font-size: 100%;
 }
 
 /* Cores utilizadas no projeto */
@@ -32,6 +40,7 @@ ul, li{
     
     --grey-500: #6B7280;
     --grey-600: #4B5563;
+    --grey-800: #1F2937;
     --grey-900: #111827;
     
     --cinza-principal: #F7F7F7;
@@ -55,35 +64,94 @@ ul, li{
 
 ::-webkit-scrollbar {
     width: 10px;
+
 }
 
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #888; 
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--grey-600); 
 }
 
-/* classes estilizadas */
+/* font-size classes and tags */
+
+h1,h2,h3,h4,h5,h6, .display{
+    font-weight: bolder;
+}
+.display{
+    font-size: 4.3rem;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+h5{
+    font-size: 1.6rem;
+}
+h6{
+    font-size: 1.4rem;
+}
+
+.smaller-p{
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+p,a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.larger-p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+
+
+
+/* spacers */
+
+.mt-6{
+    margin-top: calc(1rem * 4.5);
+}
+
+.mt-7{
+    margin-top: calc(1rem * 6);
+}
+
+
 
 /* First Section */
-
 .display-title{
     font-weight: bolder;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 50px;
     color: #1F2937;
 }
 
 .text-description{
-    color: var(--grey-600);
+    color: var(--grey-500);
     font-weight: normal;
-    font-size: 18px;
 }
 
 .video-container, .video-home{
@@ -93,21 +161,11 @@ ul, li{
 /* Second Section */
 
 .display-title-gallery{
-    font-family: 'Nunito Sans', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 60px;
     text-align: center;
     color: var(--branco);
 }
 
 .gallery-description{
-    font-family: 'Nunito Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
     text-align: center;
     color: var(--azul-descricao);
 }
