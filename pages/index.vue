@@ -34,7 +34,11 @@
 			</b-row>
       <!--<hr class="index-100 p-relative index-100 hr-cards w-100">-->
 			<b-row>
-				<b-col cols='4' v-for="item in items" :key="item" class=''><Card-alt class="my-3" Professor="Francisco Carlos" Name="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati possimus eos expedita eum veritatis quasi quae architecto exercitationem molestiae tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit." Synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati possimus eos expedita eum veritatis quasi quae architecto exercitationem molestiae tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit."/></b-col>
+				<b-col v-for="item in items" :key="item" class='d-flex flex-wrap'>
+
+          <Card-alt class="my-3" Professor="Francisco Carlos" Name="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati possimus eos expedita eum veritatis quasi quae architecto exercitationem molestiae tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit." Synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati possimus eos expedita eum veritatis quasi quae architecto exercitationem molestiae tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit."/>
+        
+        </b-col>
 			</b-row>
 		</b-container>
     <div class="wave-container">
@@ -74,16 +78,12 @@ export default {
 </style>
 
 <style scoped>
-  
+   
   /* Media Queries */
 
-  @media screen and (max-width: 490px){
-    #cards-div{
-      display: block !important;
-
-      margin: 0 auto;
-    }
-  }
+  /* @media screen and (max-width: 490px){
+    
+  } */
 
   @media screen and (max-width: 545px){
     .text-description{

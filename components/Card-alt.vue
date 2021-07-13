@@ -59,13 +59,17 @@ img{
     
 }
 
+div{
+    /* responsividade dos cards */
+    margin: 0 auto;
+}
+
 .card{
     border: 0;
     border-radius: 0.5rem;
     min-height: 32rem;
     max-height: 32rem;
-    max-width: 100%;
-    
+    width: 20rem;
 }
 
 .card-body{
@@ -76,8 +80,14 @@ img{
     
 }
 
-.card-title{
+/* .card-title{
     
+} */
+
+@media screen and (max-width: 345px)  {
+    .card{
+        width: auto;
+    }
 }
 
 
