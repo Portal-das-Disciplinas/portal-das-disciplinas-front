@@ -1,11 +1,7 @@
 <template>
     <div>
         <Navbar/>
-        <div class="bg-login d-flex align-items-center justify-content-center">
-            <div class="teste">
-
-            </div>
-        </div>
+        <div class="bg-login d-flex align-items-center justify-content-center"></div>
         <Footer/>
     </div>
 </template>
@@ -25,11 +21,5 @@ export default {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.teste{
-    background-color: red;
-    height: 20rem;
-    width: 100px;
 }
 </style>
