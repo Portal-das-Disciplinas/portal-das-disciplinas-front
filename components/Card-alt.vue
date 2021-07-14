@@ -11,7 +11,7 @@
             title-tag='h6'
             >
             <b-card-text class="text-justify">{{truncText(Synopsis, 126)}}</b-card-text>
-            <b-button class="w-100 transition-4" variant="dark">Acessar</b-button>
+            <b-button class="w-100 transition-4" variant="dark" to="/disciplina">Acessar</b-button>
         </b-card>
     </div>
 </template>
