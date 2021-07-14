@@ -2,6 +2,19 @@
     <div>
         <Navbar/>
         <div class="bg-login">
+            <div class="teste">
+                <form action="" class="d-flex">
+                    <div>
+                        <label for=""></label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for=""></label>
+                        <input type="password">
+                    </div>
+                </form>
+                <button type="submit">Submit</button>
+            </div>
         </div>
         <Footer/>
     </div>
@@ -22,5 +35,12 @@ export default {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.teste{
+    width: 400px;
+    height: 400px;
+    background: red;
+    margin: 0 auto;
 }
 </style>
