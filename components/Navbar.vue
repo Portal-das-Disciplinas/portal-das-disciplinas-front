@@ -2,14 +2,14 @@
     <div class="sticky-top shadow nav">
         <div class="access-bar d-flex align-items-center md-hide-nav">
             <b-container>
-                <b-row class="d-flex justify-content-between">
+                <b-row class="access-bar-row d-flex justify-content-between">
                     <div class="d-flex justify-content-between access-div align-items-center">
-                        <div>-</div>
-                        <div>A</div>
-                        <div>+</div>
-                        <i class="fas fa-adjust"></i>
+                        <span>-</span>
+                        <span>A</span>
+                        <span>+</span>
+                        <i @click='toggleContrast' class="fas fa-adjust"></i>
                     </div>
-                    <div>Instituto Metrópole Digital - IMD</div>
+                    <span>Instituto Metrópole Digital - IMD</span>
                 </b-row>
             </b-container>
         </div>
@@ -46,6 +46,11 @@ export default {
             toggle: false
         }
     },
+    methods:{
+        toggleContrast(){
+            document.getElementsByTagName('body')[0].classList.toggle("contrast-A");
+        }
+    }
 }
 
 </script>

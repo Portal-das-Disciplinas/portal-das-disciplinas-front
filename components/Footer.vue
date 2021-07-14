@@ -10,7 +10,7 @@
                     <p id="pdd-sub" class="mt-3 footer-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus culpa est recusandae.</p>
                 </div>
                 <div>
-                    <b-img id="ufrn-logo" fluid src="../assets/img/ufrnlogo-alt.png"></b-img>
+                    <b-img id="ufrn-logo" class='blackImg' fluid src="../assets/img/ufrnlogo-alt.png"></b-img>
                 </div>
             </b-row>
             <b-row>

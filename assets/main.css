@@ -50,6 +50,36 @@ html{
     --preto-secundario: #091620;
 }
 
+/* contrast classes */
+
+.contrast-A *:not(h1,h2,h3,h4,h5,h6,p,span,code,button,img,i,.btn, .thumb-imd, #thumb-text-div, .accordion-title,.access-bar, .access-bar-row, .container, .access-div){
+    background-color: black !important;
+    fill: black !important;
+}
+.contrast-A *:not(.access-button, i, .access-bar, .btn, .container, .row, code, .accordion-title){
+    color: white !important;  
+}
+
+.contrast-A .blackImg {
+    filter: invert(1)
+}
+
+.contrast-A .card{
+    outline: 1px solid var(--azul-primario) !important;
+}
+.contrast-A .card-footer, .footer{
+    border-top: 1px solid var(--azul-primario) !important;
+}
+.contrast-A .sticky-top, .access-bar{
+    border-bottom: 1px solid var(--azul-primario) !important;
+}
+
+.contrast-C{
+    background-color: black !important;
+    color: green !important;
+}
+
+
 /* Definição de propriedades da página - Selection e Scrollbar */
 
 

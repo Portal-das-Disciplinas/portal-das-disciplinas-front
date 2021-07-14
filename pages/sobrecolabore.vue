@@ -49,7 +49,7 @@
 
                         <b-card-header header-tag="header" class="p-2" role="tab">
                             <b-button block v-b-toggle.accordion-1 @click="visible = !visible" class="accordion-colab-btn transition-4 br-30px d-flex justify-content-between align-items-center px-4">
-                                <div>Colaboradores anteriores</div>
+                                <div class='accordion-title'>Colaboradores anteriores</div>
                                 <i v-if="visible" class="fas fa-caret-down fa-lg"></i>
                                 <i v-else class="fas fa-caret-up fa-lg"></i>
                             </b-button>
