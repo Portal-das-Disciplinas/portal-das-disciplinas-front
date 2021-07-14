@@ -3,8 +3,8 @@
         <Navbar/>
         <div class="thumb-imd">
             <!-- <img class="img-fluid" src="../assets/img/bg-imd.jpg" alt="Background IMD"> -->
-            <div class="text-center h-100 d-flex flex-column justify-content-center align-items-center text-white">
-                <h1 style="font-size: 57px;">Sobre & colabore</h1>
+            <div class="text-center h-100 d-flex flex-column justify-content-center align-items-center text-white" id="thumb-text-div">
+                <h1 style="font-size: 57px;">Sobre & Colabore</h1>
                 <p class="w-50 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio necessitatibus adipisci reprehenderit quibusdam enim rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus.</p>
             </div>
         </div>
@@ -164,6 +164,21 @@ export default {
     @media screen and (max-width: 768px){
         #devsGrid{
             margin: 1.8rem 0;
+        }
+    }
+
+    @media screen and (max-width: 441px){
+        .thumb-imd{
+            height: auto;
+        }
+
+        #thumb-text-div{
+            padding: 1.2rem 0;
+        }
+
+        #thumb-text-div > p{
+            width: 75% !important;
+            margin-top: 15px;
         }
     }
 </style>
