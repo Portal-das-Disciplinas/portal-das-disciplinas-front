@@ -29,7 +29,7 @@
                             <li><NuxtLink class="NuxtLink" to="/"> Início</NuxtLink></li>
                             <li><NuxtLink class="NuxtLink" to="/sobrecolabore"> Sobre & Colabore</NuxtLink></li>
                         </ul>
-                        <b-button class="access-button">Acesso</b-button>
+                        <b-button class="access-button" to="/login">Acesso</b-button>
                     </div>
                 </div>
             </b-row>
