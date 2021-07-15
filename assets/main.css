@@ -52,7 +52,7 @@ html{
 
 /* contrast classes */
 
-.contrast-A *:not(h1,h2,h3,h4,h5,h6,p,span,code,button,img,i,.btn, .thumb-imd, #thumb-text-div, .accordion-title,.access-bar, .access-bar-row, .container, .access-div){
+.contrast-A *:not(h1,h2,h3,h4,h5,h6,p,span,code,button,img,i,.btn, .thumb-imd, #thumb-text-div, .accordion-title){
     background-color: black !important;
     fill: black !important;
 }
@@ -70,14 +70,10 @@ html{
 .contrast-A .card-footer, .footer{
     border-top: 1px solid var(--azul-primario) !important;
 }
-.contrast-A .sticky-top, .access-bar{
+.contrast-A .sticky-top{
     border-bottom: 1px solid var(--azul-primario) !important;
 }
 
-.contrast-C{
-    background-color: black !important;
-    color: green !important;
-}
 
 
 /* Definição de propriedades da página - Selection e Scrollbar */
@@ -226,7 +222,7 @@ a{
 .NuxtLink{
     color: var(--grey-500);
     text-decoration: none;
-    transition: .6s;
+    transition: opacity .6s;
 }
 
 .NuxtLink:hover{
