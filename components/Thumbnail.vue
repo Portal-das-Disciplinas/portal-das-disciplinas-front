@@ -1,23 +1,38 @@
 <template>
 <div class="thumb-imd">
-    <div class="text-center h-100 d-flex flex-column justify-content-center align-items-center text-white" id="thumb-text-div">
+    <div v-if="type === 'about'" class="text-center h-100 d-flex flex-column justify-content-center align-items-center text-white" id="thumb-text-div">
         <h1 style="font-size: 57px;">{{title}}</h1>
         <p class="w-50 text-white">{{description}}</p>
     </div>
+
+    <!-- conditional selection -->
+
+    <div v-else class="text-center h-100 d-flex flex-column justify-content-center align-items-center text-white" id="thumb-text-div">
+        <h1 class="thumb-disciplina" style="font-size: 45px;">{{title}}</h1>
+    </div>    
 </div>
 </template>
 
 <script>
 export default {
     props:{
+        // General props
+
         title:{
             required: true,
             type: String
         },
-        description:{
+
+        type: {
             required: true,
             type: String
-        }
+        },
+
+        // About props
+
+        description:{
+            type: String
+        },
     }
     
 }
@@ -47,6 +62,12 @@ export default {
     #thumb-text-div > p{
         width: 75% !important;
         margin-top: 15px;
+    }
+
+    .thumb-disciplina{
+        width: 75%;
+        height: 100%;
+        word-wrap: break-word;
     }
 }
 

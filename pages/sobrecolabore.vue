@@ -2,7 +2,7 @@
     <div>
         <Navbar/>
         <!-- <img class="img-fluid" src="../assets/img/bg-imd.jpg" alt="Background IMD"> -->
-        <Thumbnail title="Sobre & Colabore" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio necessitatibus adipisci reprehenderit quibusdam enim rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus."/>
+        <Thumbnail type="about" title="Sobre & Colabore" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio necessitatibus adipisci reprehenderit quibusdam enim rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus."/>
         <b-container class="mt-5">
             <b-row>
                 <div class="col-md-6">
