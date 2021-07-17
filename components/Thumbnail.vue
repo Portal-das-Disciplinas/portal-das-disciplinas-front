@@ -8,7 +8,7 @@
     <!-- conditional selection -->
 
     <div v-else class="text-center h-100 d-flex flex-column justify-content-center align-items-center text-white" id="thumb-text-div">
-        <h1 class="thumb-disciplina" style="font-size: 45px;">{{title}}</h1>
+        <h1 class="thumb-disciplina">{{title}}</h1>
     </div>    
 </div>
 </template>

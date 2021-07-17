@@ -165,6 +165,9 @@ p,a {
 
 
 /* spacers */
+.no-margin{
+    margin: 0;
+}
 
 .mt-6{
     margin-top: calc(1rem * 4.5);
