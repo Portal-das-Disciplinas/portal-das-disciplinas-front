@@ -56,7 +56,7 @@ img{
 
 .btn{
     background-color: var(--azul-primario);
-    
+    border-color: transparent;
 }
 
 .card{

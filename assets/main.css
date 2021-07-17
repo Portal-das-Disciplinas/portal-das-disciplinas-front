@@ -52,21 +52,28 @@ html{
 
 /* contrast classes */
 
+
 .contrast-A *:not(h1,h2,h3,h4,h5,h6,p,span,code,button,img,i,.btn, .thumb-imd, #thumb-text-div, .accordion-title){
     background-color: black !important;
     fill: black !important;
+    
 }
-.contrast-A *:not(.access-button, i, .access-bar, .btn, .container, .row, code, .accordion-title){
+.contrast-A *:not(.access-button, i, .access-bar, .btn, .container, .row, code, .accordion-title, a){
     color: white !important;  
+}
+
+.contrast-A .NuxtLink{
+    color: white;
 }
 
 .contrast-A .blackImg {
     filter: invert(1)
 }
 
-.contrast-A .card{
+.contrast-A .card-alt{
     outline: 1px solid var(--azul-primario) !important;
 }
+
 .contrast-A .card-footer, .footer{
     border-top: 1px solid var(--azul-primario) !important;
 }
@@ -164,6 +171,10 @@ p,a {
 }
 
 .mt-7{
+    margin-top: calc(1rem * 6);
+}
+
+.mt-8{
     margin-top: calc(1rem * 6);
 }
 

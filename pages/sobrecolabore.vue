@@ -3,16 +3,16 @@
         <Navbar/>
         <!-- <img class="img-fluid" src="../assets/img/bg-imd.jpg" alt="Background IMD"> -->
         <Thumbnail type="about" title="Sobre & Colabore" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio necessitatibus adipisci reprehenderit quibusdam enim rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus."/>
-        <b-container class="mt-5">
+        <b-container class='mt-8'>
             <b-row>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <div>
-                        <h1>Nossa equipe</h1>
-                        <p class="text-justify mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eveniet temporibus dolorum facere ullam repellat doloribus architecto tempore unde quae? Tempore cumque dolor velit enim aliquam laboriosam, dignissimos doloremque odio? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h2>Nossa equipe</h2>
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eveniet temporibus dolorum facere ullam repellat doloribus architecto tempore unde quae? Tempore cumque dolor velit enim aliquam laboriosam, dignissimos doloremque odio? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div>
-                        <h1>Colabore</h1>
-                        <p class="text-justify mt-3">Caso tenha interesse em colaborar na adição de novas funcionalidades do site como sistema de classificações dinâmicos, refinamento de mecanismos de busca, interação com o portal de dados abertos da UFRN para recuperação de índices de aprovação de disciplinas, implementação de fóruns no portal, entre outros, por favor, entre em contato conosco.</p>
+                        <h2>Colabore</h2>
+                        <p>Caso tenha interesse em colaborar na adição de novas funcionalidades do site como sistema de classificações dinâmicos, refinamento de mecanismos de busca, interação com o portal de dados abertos da UFRN para recuperação de índices de aprovação de disciplinas, implementação de fóruns no portal, entre outros, por favor, entre em contato conosco.</p>
                     </div>
                     <div class="break-word">
                         <b>Lista de emails para contato</b>
@@ -27,9 +27,9 @@
                 <!-- Prof + Devs grid -->
 
                 <!-- Conversar com Henry sobre links para Github/Linkedin/Ig -->
-                <div id="devsGrid" class="col-md-6 d-flex flex-column align-items-center">
+                <div id="devsGrid" class="col-md-7 d-flex flex-column align-items-center">
                     <Professor nome="Eugênio Paccelli" role="orientador"/>
-                    <div class="d-flex flex-wrap justify-content-center">
+                    <div class="d-flex flex-wrap justify-content-around mt-4">
                         <Dev nome="IMD Dev" devEnd="back-end"/>
                         <Dev nome="IMD Dev" devEnd="back-end"/>
                         <Dev nome="IMD Dev" devEnd="back-end"/>
@@ -101,6 +101,9 @@ export default {
         list-style-type: disc;
     }
 
+    .card, .card-header, hr{
+        border-color: var(--azul-primario);
+    }
     .accordion-colab-btn{
         background-color: var(--cinza-bg);
         color: var(--azul-primario);
@@ -119,21 +122,8 @@ export default {
         color: var(--cinza-bg);
     }
 
-    p{
-        font-family: Nunito Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 24px;
-        color: var(--grey-900);
-    }
-
-    h1{
-        font-family: Nunito Sans;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 48px;
+    h2,p{
+        margin-bottom: 1.5rem;
     }
 
     #devsGrid{

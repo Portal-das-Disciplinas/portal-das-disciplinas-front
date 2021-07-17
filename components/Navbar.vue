@@ -51,7 +51,6 @@ export default {
         toggleContrast(){
             document.getElementsByTagName('body')[0].classList.toggle("contrast-A");
             this.toggle = !this.toggle;
-            
         }
     }
 }
@@ -90,6 +89,8 @@ ul li{
     height: 40px;
     margin: 0;
     transition: .6s;
+    justify-content: center;
+    align-items:center;
 }
 
 .access-button:hover{

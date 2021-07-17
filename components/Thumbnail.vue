@@ -42,7 +42,7 @@ export default {
 
 .thumb-imd{
     width: 100%;
-    height: 20rem;
+    height: 400px;
     background: linear-gradient(30deg, rgba(1, 75, 140, 0.8), rgba(124, 54, 236, 0.75)), url('../assets/img/bg-imd.jpg');
     background-size: cover;
     background-position: center;
