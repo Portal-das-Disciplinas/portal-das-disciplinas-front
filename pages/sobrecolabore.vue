@@ -3,7 +3,7 @@
         <Navbar/>
         <!-- <img class="img-fluid" src="../assets/img/bg-imd.jpg" alt="Background IMD"> -->
         <Thumbnail type="about" title="Sobre & Colabore" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio necessitatibus adipisci reprehenderit quibusdam enim rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus."/>
-        <b-container class='mt-8'>
+        <b-container class='mt-8' id="top-container">
             <b-row>
                 <div class="col-md-5">
                     <div>
@@ -139,6 +139,18 @@ export default {
     @media screen and (max-width: 768px){
         #devsGrid{
             margin: 1.8rem 0;
+        }
+    }
+
+    @media screen and (max-width: 700px){
+        #top-container{
+            margin-top: 1.1rem !important;
+        }
+    }
+
+    @media screen and (max-width: 576px){
+        #acc-row{
+            margin: 1.3rem .5rem
         }
     }
 </style>
