@@ -103,8 +103,10 @@
 
                         <b-card no-body class="mb-1">
                             <b-card-header header-tag="header" class="p-1 card-header" role="tab">
-                                <b-button v-b-toggle:my-collapse block v-b-toggle.accordion-1 variant="white" class="btn-acc text-left p-3">Accordion 1
-                                    <span class="when-open">Close</span><span class="when-closed">Open</span>
+                                <b-button v-b-toggle:my-collapse block v-b-toggle.accordion-1 variant="white" class="btn-acc text-left p-3 d-flex justify-content-between">
+                                    <div>Accordion 1</div>
+                                    <span class="when-open"><i class="fas fa-caret-up fa-lg"></i></span>
+                                    <span class="when-closed"><i class="fas fa-caret-down fa-lg"></i></span>
                                 </b-button>
                             </b-card-header>
                             <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
