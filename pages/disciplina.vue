@@ -101,7 +101,7 @@
 
                     <div class="accordion w-100" role="tablist">
 
-                        <b-card no-body class="mb-1">
+                        <b-card no-body class="mb-2">
                             <b-card-header header-tag="header" class="p-1 card-header" role="tab">
                                 <b-button v-b-toggle:my-collapse block v-b-toggle.accordion-1 variant="white" class="btn-acc text-left p-3 d-flex justify-content-between">
                                     <div>Lorem ipsum dolor sit amet?</div>
@@ -117,7 +117,7 @@
                         </b-card>
 
 
-                        <b-card no-body class="mb-1">
+                        <b-card no-body class="mb-2">
                             <b-card-header header-tag="header" class="p-1 card-header" role="tab">
                                 <b-button v-b-toggle:my-collapse block v-b-toggle.accordion-2 variant="white" class="btn-acc text-left p-3 d-flex justify-content-between">
                                     <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit?</div>
@@ -133,10 +133,10 @@
                         </b-card>
 
 
-                        <b-card no-body class="mb-1">
+                        <b-card no-body class="mb-2">
                             <b-card-header header-tag="header" class="p-1 card-header" role="tab">
                                 <b-button v-b-toggle:my-collapse block v-b-toggle.accordion-3 variant="white" class="btn-acc text-left p-3 d-flex justify-content-between">
-                                    <div>Lorem ipsum dolor sit amet consectetur.</div>
+                                    <div>Lorem ipsum dolor sit amet consectetur?</div>
                                     <span class="when-open"><i class="fas fa-caret-up fa-lg"></i></span>
                                     <span class="when-closed"><i class="fas fa-caret-down fa-lg"></i></span>
                                 </b-button>
@@ -147,9 +147,30 @@
                                 </b-card-body>
                             </b-collapse>
                         </b-card>
+
+                        <b-card no-body class="mb-2">
+                            <b-card-header header-tag="header" class="p-1 card-header" role="tab">
+                                <b-button v-b-toggle:my-collapse block v-b-toggle.accordion-4 variant="white" class="btn-acc text-left p-3 d-flex justify-content-between">
+                                    <div>Lorem ipsum dolor sit amet consectetur. Amet dolor?</div>
+                                    <span class="when-open"><i class="fas fa-caret-up fa-lg"></i></span>
+                                    <span class="when-closed"><i class="fas fa-caret-down fa-lg"></i></span>
+                                </b-button>
+                            </b-card-header>
+                            <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
+                                <b-card-body class="pt-0">
+                                <b-card-text class="text-justify answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima veniam ex sequi quae assumenda? Repellat labore aliquam autem obcaecati aspernatur sequi accusamus vel, repudiandae, qui, ipsam nostrum officiis dolore at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores culpa molestias odio illum suscipit vero ad nisi eum reprehenderit animi, hic repellat deserunt natus architecto qui. Est, impedit doloribus!</b-card-text>
+                                </b-card-body>
+                            </b-collapse>
+                        </b-card>
                     </div>
                 </b-row>
             </b-container>
+            
+            <!-- 
+                
+                Set up some svgs (waves or blobs)
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L120,170.7C240,149,480,107,720,96C960,85,1200,107,1320,117.3L1440,128L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg> -->
         </section>
 
         <Footer/>
