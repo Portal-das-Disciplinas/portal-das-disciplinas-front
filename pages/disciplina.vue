@@ -91,7 +91,7 @@
                 </b-row>
             </b-container>
         </section>
-        <section class="section-gap faq-section pt-5">
+        <section class="faq-section pt-5">
             <b-container>
                 <h1 class="w-100 text-center faq-title">Perguntas Frequentes</h1>
 
@@ -165,12 +165,10 @@
                     </div>
                 </b-row>
             </b-container>
-            
-            <!-- 
-                
-                Set up some svgs (waves or blobs)
 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L120,170.7C240,149,480,107,720,96C960,85,1200,107,1320,117.3L1440,128L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg> -->
+            <div class="wave-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--azul-links)" fill-opacity="1" d="M0,128L480,96L960,160L1440,128L1440,320L960,320L480,320L0,320Z"></path></svg>
+            </div>
         </section>
 
         <Footer/>
