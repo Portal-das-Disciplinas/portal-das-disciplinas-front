@@ -43,7 +43,19 @@
                     <div class="col-md-3 section-gap ml-5" id="second-section">
                         <div>
                             <h3 class="title">Estatística</h3>
+                            <div class="classification">
+                                <p>Metodologia</p>
+                                <p> 55% ATIVA </p>
+                                <div class="primary-bar w-100">
+                                    <div class="secondary-bar" :style="'width: '+porcentagem+'%'">
+
+                                    </div>
+                                </div>
+                                <p> 55% ATIVA </p>
+                            </div>
                             <hr>
+
+
                         </div>
 
                         <div>
@@ -177,7 +189,13 @@
 
 <script>
 export default {
-
+    data(){
+        return {
+            porcentagem:80
+        }
+    }
+        
+    
 }
 </script>
 
@@ -190,6 +208,16 @@ li{
 
 h3{
     margin-bottom: 1.5rem;
+}
+
+.primary-bar{
+    background-color: red;
+    height: 30px;
+}
+
+.secondary-bar{
+    background-color: blue;
+    height: 100%;
 }
 
 
