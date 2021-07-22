@@ -3,10 +3,10 @@
         <div class="access-bar d-flex align-items-center md-hide-nav">
             <b-container>
                 <b-row class="access-bar-row d-flex justify-content-between">
-                    <div class="d-flex justify-content-between access-div align-items-center">
-                        <span>-</span>
-                        <span>A</span>
-                        <span>+</span>
+                    <div class="accessibility-menu d-flex justify-content-between access-div align-items-center">
+                        <span @click="decreaseFontSize">-</span>
+                        <span @click="resetFontSize">A</span>
+                        <span @click="increaseFontSize">+</span>
                         <i @click='toggleContrast' class="fas fa-adjust"></i>
                     </div>
                     <span>Instituto Metrópole Digital - IMD</span>
@@ -51,6 +51,15 @@ export default {
         toggleContrast(){
             document.getElementsByTagName('body')[0].classList.toggle("contrast-A");
             this.toggle = !this.toggle;
+        },
+         decreaseFontSize(){
+            document.getElementsByTagName('html')[0].style.fontSize = '80%'
+        },
+        increaseFontSize(){
+            document.getElementsByTagName('html')[0].style.fontSize = '120%'
+        },
+        resetFontSize(){
+            document.getElementsByTagName('html')[0].style.fontSize = '100%'
         }
     }
 }
@@ -58,11 +67,18 @@ export default {
 </script>
 
 <style scoped>
+
+
+
 .access-bar{
     width: 100%;
     height: 32px;
     color: var(--branco);
     background-color: var(--azul-primario);
+}
+
+.accessibility-menu span, i{
+    cursor: pointer;
 }
 
 .main-bar{

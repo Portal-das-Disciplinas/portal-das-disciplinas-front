@@ -1,9 +1,7 @@
 <template>
   <div>
     <Navbar/>
-    <!-- TESTANDO -->
-    <button @click="increaseFontSize">+</button><button @click="resetFontSize">A</button><button  @click="decreaseFontSize">-</button>
-    <!-- FIM TESTANDO -->
+
     <!-- First section - Navbar + Video + Short description -->
     <section class="mt-5 mb-5" >
       <b-container>
