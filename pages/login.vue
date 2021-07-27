@@ -22,7 +22,7 @@
                     <p class="text-right">
                         Esqueceu sua senha? <a href="">Clique aqui!</a>
                     </p>
-                    <b-button class="w-100 login-btn">Acessar</b-button>
+                    <b-button class="w-100 login-btn"  to="/cadastro_disciplina" >Acessar</b-button>
                 </div>
             </div>
         </div>

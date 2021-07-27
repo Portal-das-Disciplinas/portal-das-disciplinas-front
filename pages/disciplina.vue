@@ -77,26 +77,28 @@
                         <div>
                             <h3 class="title">Estatística</h3>
 
-                            <div class="classification">
-                                <p class='text-center larger-p font-weight-bold'>Metodologia</p>
+                             <!-- COMPONETIZAR BARRA? -->
+
+                            <div v-for="item in estatisticas" :key="item" class="classification">
+                                <p class='text-center larger-p font-weight-bold'>{{item.name}}</p>
 
                                 <div class="bar-info d-flex align-items-center">
-                                    <p class='m-0 pb-0 pr-3' :style="setHighlight(porcentagem, '#77C159')">{{porcentagem}}%</p>
+                                    <p class='m-0 pb-0 pr-3' :style="setHighlight(item.porcentagens[0].porcentagem, '#77C159')">{{item.porcentagens[0].porcentagem}}%</p>
                                     <div class="right-bar w-100">
                                         <div
                                             class="left-bar"
                                             :style="
-                                                'width: ' + porcentagem + '%'
+                                                'width: ' + item.porcentagens[0].porcentagem + '%'
                                             "
                                         ></div>
                                     </div>
-                                    <p class='m-0 pb-0 pl-3' :style="setHighlight(100-porcentagem, '#1155CC')">{{100-porcentagem}}%</p>
+                                    <p class='m-0 pb-0 pl-3' :style="setHighlight(100-item.porcentagens[0].porcentagem, '#1155CC')">{{item.porcentagens[1].porcentagem}}%</p>
                                 </div>
                                 
                                 <div class="classification-text d-flex justify-content-between">
-                                    <p :style="setHighlight(porcentagem, '#77C159')">Ativa</p>
-                                    <p :style="setHighlight(100-porcentagem, '#1155CC')">Clássica</p>
+                                    <p v-for="porcentagem in item.porcentagens" :key="porcentagem">{{porcentagem.name}}</p>
                                 </div>
+                                
                                 
                             </div>
 
@@ -421,7 +423,13 @@
 export default {
     data() {
         return {
-            porcentagem: 70
+            estatisticas: [
+                {name: "Metodologia", porcentagens: [{name: "Ativa", porcentagem: 70}, {name: "Passiva", porcentagem: 30}]},
+                {name: "Discussão", porcentagens: [{name: "Social", porcentagem: 40}, {name: "Técnica", porcentagem: 60}]},
+                {name: "Abordagem", porcentagens: [{name: "Teórica", porcentagem: 50}, {name: "Prática", porcentagem: 50}]},
+                {name: "Avaliações", porcentagens: [{name: "Provas", porcentagem: 45}, {name: "Atividades", porcentagem: 55}]}
+            ]
+            
         };
     },
     methods: {
