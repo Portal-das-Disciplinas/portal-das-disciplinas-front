@@ -22,7 +22,7 @@
                     <p class="text-right">
                         Esqueceu sua senha? <a href="">Clique aqui!</a>
                     </p>
-                    <b-button class="w-100 transition-4">Acessar</b-button>
+                    <b-button class="w-100 login-btn">Acessar</b-button>
                 </div>
             </div>
         </div>
@@ -85,6 +85,14 @@ h3 {
     min-height: 360px;
 }
 
+.login-btn{
+    transition: .4s !important;
+    background-color: var(--azul-primario);
+}
+
+.login-btn:hover{
+    background-color: var(--azul-links);
+}
 
 @media screen and (max-width: 1200px) {
     .login-box {
