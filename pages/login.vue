@@ -8,14 +8,14 @@
                     <label for="email">Email</label>
                     <b-form-input
                         id="email"
-                        placeholder="Digite aqui o seu email..."
+                        placeholder="Email"
                         required
                         type="email"
                     ></b-form-input>
                     <label for="email">Senha</label>
                     <b-form-input
                         id="senha"
-                        placeholder="Digite aqui a sua senha..."
+                        placeholder="Senha"
                         required
                         type="password"
                     ></b-form-input>
@@ -80,16 +80,23 @@ h3 {
     background-repeat: no-repeat;
 }
 
+.login-box{
+    max-height: 430px;
+    min-height: 360px;
+}
+
 
 @media screen and (max-width: 1200px) {
     .login-box {
         width: 50%;
+        height: 80%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .login-box {
         width: 80%;
+        height: 80%;
     }
 }
 
