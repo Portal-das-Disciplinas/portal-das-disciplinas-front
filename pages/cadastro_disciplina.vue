@@ -3,8 +3,8 @@
         <Navbar />
 
         <div class="container mt-4">
-            <h2>Cadastro de disciplinas</h2>
-            <form class="cadastro-form">
+            <h2 id="main-title" class="mb-4">Cadastro de disciplinas</h2>
+            <form class="cadastro-form" action="/">
 
                 <div class="d-flex w-100 justify-content-between">
                     <div class="p-0 col-md-8">
@@ -168,8 +168,8 @@
                     ></b-form-textarea>
                     
                     <div class="float-right">
-                        <b-button type="submit" class="mt-2 btn-danger transition-2" to="/cadastro_disciplina">Cancelar</b-button>
-                        <b-button type="submit" class="mt-2 btn-success transition-2" to="/cadastro_disciplina">Salvar</b-button>
+                        <b-button type="submit" class="mt-2 btn-danger transition-2">Cancelar</b-button>
+                        <b-button type="submit" class="mt-2 btn-success transition-2">Salvar</b-button>
                     </div>
                 </div>
             </form>
@@ -225,4 +225,18 @@
 .footer-gap{
     margin-top: 5.2rem;
 }
+
+#main-title{
+
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 255px) {
+    #main-title{
+        word-break: break-all;
+    }
+}
+
+
 </style>
