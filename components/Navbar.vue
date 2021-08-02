@@ -18,8 +18,15 @@
             <b-row>
                 <div class="main-bar d-flex justify-content-between align-items-center">
                     <div id="imd-logo">
-                        <NuxtLink v-if='!toggle' class="NuxtLink" to="/"><b-img class='imd-logo' fluid src="../assets/img/imdlogo.png"></b-img></NuxtLink>
-                        <NuxtLink v-else class="NuxtLink" to="/"><b-img class='imd-logo' fluid src="../assets/img/imdlogo-alt.png"></b-img></NuxtLink>
+                        <NuxtLink class="NuxtLink" to="/"><b-img class='imd-logo' fluid src="../assets/img/imdlogo.png"></b-img></NuxtLink>
+                        <!--
+                            
+                            
+                            PODEMOS RETOMAR ESSA FEATURE NUMA VERSÃO FUTURA!!
+
+
+                            <NuxtLink v-if='!toggle' class="NuxtLink" to="/"><b-img class='imd-logo' fluid src="../assets/img/imdlogo.png"></b-img></NuxtLink>
+                        <NuxtLink v-else class="NuxtLink" to="/"><b-img class='imd-logo' fluid src="../assets/img/imdlogo-alt.png"></b-img></NuxtLink> -->
                     </div>
                     <button id="btn-mobile" @click="toggle = !toggle">
                         <i v-if="!toggle" class="fas fa-bars fa-2x"></i>
