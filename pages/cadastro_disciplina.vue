@@ -226,10 +226,6 @@
     margin-top: 5.2rem;
 }
 
-#main-title{
-
-}
-
 /* Media Queries */
 
 @media screen and (max-width: 255px) {
