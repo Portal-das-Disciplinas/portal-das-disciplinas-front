@@ -430,7 +430,7 @@ export default {
                 {name: "Avaliações", porcentagens: [{name: "Provas", porcentagem: 45}, {name: "Atividades", porcentagem: 55}]}
             ]
             
-        };
+        }
     },
     methods: {
         setHighlight(porcentagem,color){
@@ -440,8 +440,6 @@ export default {
             return { color: 'black', fontWeight: 'inherit' }
         }
     }
-        
-    
 };
 </script>
 
