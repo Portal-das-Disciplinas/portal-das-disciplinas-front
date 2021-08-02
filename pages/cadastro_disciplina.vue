@@ -3,15 +3,15 @@
         <Navbar />
 
         <div class="container mt-4">
-            <h2>Cadastre a sua disciplina</h2>
-            <div class="cadastro-form">
+            <h2>Cadastro de disciplinas</h2>
+            <form class="cadastro-form">
 
                 <div class="d-flex w-100 justify-content-between">
                     <div class="p-0 col-md-8">
                         <label for="nome-disciplina">Nome da disciplina</label>
                         <b-form-input
                             id="nome-disciplina"
-                            placeholder="Nome da disciplina"
+                            placeholder="Programação com Banco de Dados"
                             required
                             type="text"
                         ></b-form-input>
@@ -25,7 +25,7 @@
 
                             <b-form-input
                                 id="codigo-disciplina"
-                                placeholder="Código da disciplina"
+                                placeholder="IMD0403"
                                 required
                                 type="text"
                             ></b-form-input>
@@ -38,14 +38,14 @@
                     <label for="professor">Professor</label>
                     <b-form-input
                         id="professor"
-                        placeholder="Nome do professor"
+                        placeholder="José Israel Soares dos Santos"
                         required
                         type="text"
                     ></b-form-input>
                 </div>
 
                 <div class="mt-2">
-                    <div class="d-flex justify-content-between flex-wrap">
+                    <div class="d-flex justify-content-between flex-wrap align-items-center">
                         <div class="col-md-5 p-0">
                             <label for="sinopse">Sinopse</label>
                             <b-form-textarea
@@ -55,17 +55,40 @@
                                 max-rows="12"
                             ></b-form-textarea>
                         </div>
+                        <div class="col-md-6 p-0 d-flex flex-column justify-content-around h-75">
 
-                        <div class="col-md-6 p-0">
-                            <label for="sinopse" class="text-center w-100">Classificações</label>
-                            <input type="range" min="1" max="100" value="50" class="slider">
+                            <div>
+                                <label for="sinopse">Classificações</label>
+                                <input type="range" min="1" max="100" value="50" class="slider">
+                            </div>
+
+                            <div>
+                                <label for="sinopse">Classificações</label>
+                                <input type="range" min="1" max="100" value="50" class="slider">
+                            </div>
+
+                            <div>
+                                <label for="sinopse">Classificações</label>
+                                <input type="range" min="1" max="100" value="50" class="slider">
+                            </div>
+
+                            <div>
+                                <label for="sinopse">Classificações</label>
+                                <input type="range" min="1" max="100" value="50" class="slider">
+                            </div>
+
+                            <div>
+                                <label for="sinopse">Classificações</label>
+                                <input type="range" min="1" max="100" value="50" class="slider">
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="d-flex">
-                    <div class="w-50">
-                        <label for="sinopse">Obstaculos</label>
+                <div class="mt-2 d-flex flex-wrap justify-content-between align-items-center">
+
+                    <div class="col-md-5 p-0">
+                        <label for="sinopse">Obstáculos</label>
                         <b-form-textarea
                             id="sinopse"
                             placeholder="Digite algo sobre a sua disciplina..."
@@ -73,59 +96,92 @@
                             max-rows="12"
                         ></b-form-textarea>
                     </div>
-                    <div class="w-50">
+                    <div class="col-md-6 p-0">
                         <label for="codigo-disciplina">Links</label>
-                        <b-form-input
-                            id="codigo-disciplina"
-                            placeholder="Código da disciplina"
-                            required
-                            type="text"
-                        ></b-form-input>
-                        <label for="codigo-disciplina">Código Disciplina</label>
-                        <b-form-input
-                            id="codigo-disciplina"
-                            placeholder="Código da disciplina"
-                            required
-                            type="text"
-                        ></b-form-input>
-                        <label for="codigo-disciplina">Código Disciplina</label>
-                        <b-form-input
-                            id="codigo-disciplina"
-                            placeholder="Código da disciplina"
-                            required
-                            type="text"
-                        ></b-form-input>
-                        <label for="codigo-disciplina">Código Disciplina</label>
-                        <b-form-input
-                            id="codigo-disciplina"
-                            placeholder="Código da disciplina"
-                            required
-                            type="text"
-                        ></b-form-input>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-link"></i></span>
+                            </div>
+                            <b-form-input
+                                id="codigo-disciplina"
+                                placeholder="Código da disciplina"
+                                required
+                                type="text"
+                            ></b-form-input>
+                        </div>
+
+
+                        <label for="codigo-disciplina">Links</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-link"></i></span>
+                            </div>
+                            <b-form-input
+                                id="codigo-disciplina"
+                                placeholder="Código da disciplina"
+                                required
+                                type="text"
+                            ></b-form-input>
+                        </div>
+
+
+
+                        <label for="codigo-disciplina">Links</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-link"></i></span>
+                            </div>
+                            <b-form-input
+                                id="codigo-disciplina"
+                                placeholder="Código da disciplina"
+                                required
+                                type="text"
+                            ></b-form-input>
+                        </div>
+
+
+
+                        <label for="codigo-disciplina">Links</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-link"></i></span>
+                            </div>
+                            <b-form-input
+                                id="codigo-disciplina"
+                                placeholder="Código da disciplina"
+                                required
+                                type="text"
+                            ></b-form-input>
+                        </div>
                     </div>
                 </div>
-
-                <label for="info-complementar"
-                    >Informações complementares</label
-                >
-                <b-form-textarea
-                    id="sinopse"
-                    placeholder="Digite algo sobre a sua disciplina..."
-                    rows="12"
-                    max-rows="12"
-                ></b-form-textarea>
-
-                <b-button class="w-100 login-btn" to="/cadastro_disciplina"
-                    >Acessar</b-button
-                >
-            </div>
+                
+                <div class="mt-2">
+                    <label for="info-complementar"
+                        >Informações complementares</label
+                    >
+                    <b-form-textarea
+                        id="sinopse"
+                        placeholder="Digite algo sobre a sua disciplina..."
+                        rows="12"
+                        max-rows="12"
+                    ></b-form-textarea>
+                    
+                    <div class="float-right">
+                        <b-button type="submit" class="mt-2 btn-danger transition-2" to="/cadastro_disciplina">Cancelar</b-button>
+                        <b-button type="submit" class="mt-2 btn-success transition-2" to="/cadastro_disciplina">Salvar</b-button>
+                    </div>
+                </div>
+            </form>
         </div>
 
-        <Footer />
+        <Footer class="footer-gap"/>
     </div>
 </template>
 
 <style scoped>
+
+/* Slider */
 .slider{
     -webkit-appearance: none;
     width: 100%;
@@ -157,5 +213,16 @@
 
 .slider:hover {
   opacity: 1;
+}
+
+/* Sinopse */
+
+#sinopse{
+    border-radius: 10px;
+}
+
+/* footer */
+.footer-gap{
+    margin-top: 5.2rem;
 }
 </style>
