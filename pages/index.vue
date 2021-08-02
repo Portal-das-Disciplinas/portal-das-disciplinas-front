@@ -52,7 +52,7 @@ export default {
 
   data(){
     return{
-		items: ['A', 'B', 'C', 'D', 'E', 'F']
+		  items: ['A', 'B', 'C', 'D', 'E', 'F']
 
     }
     
