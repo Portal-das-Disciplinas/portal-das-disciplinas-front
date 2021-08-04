@@ -1,9 +1,10 @@
+
 <template>
     <div>
         <Navbar />
         <div class="bg-login d-flex align-items-center justify-content-center">
             <div class="login-box">
-                <h3 class='mb-4'>Realizar login</h3>
+                <h3 class="mb-4">Realizar login</h3>
                 <div class="login-form">
                     <label for="email">Email</label>
                     <b-form-input
@@ -11,6 +12,7 @@
                         placeholder="Email"
                         required
                         type="email"
+                        v-model="email"
                     ></b-form-input>
                     <label for="email">Senha</label>
                     <b-form-input
@@ -18,11 +20,17 @@
                         placeholder="Senha"
                         required
                         type="password"
+                        v-model="password"
                     ></b-form-input>
                     <p class="text-right">
                         Esqueceu sua senha? <a href="">Clique aqui!</a>
                     </p>
-                    <b-button class="w-100 login-btn"  to="/cadastro_disciplina" >Acessar</b-button>
+                    <b-button
+                        @click="login"
+                        class="w-100 login-btn"
+                        to="/cadastro_disciplina"
+                        >Acessar</b-button
+                    >
                 </div>
             </div>
         </div>
@@ -32,7 +40,31 @@
 </template>
 
 <script>
-export default {};
+import api from '@/api'
+export default {
+    data() {
+        return { email: "", password: "" };
+    },
+    methods: {
+        storeToken(token) {
+            if (process.browser) {
+                console.log("token: " + token);
+                localStorage.setItem("authToken", token);
+            }
+        },
+
+        login() {
+            const body = {
+                email: this.email,
+                password: this.password
+            };
+            api.post('/login', body).then(response => {
+                this.storeToken(response.data.data.token)
+            })
+         
+        }
+    }
+};
 </script>
 
 <style scoped>
@@ -80,17 +112,17 @@ h3 {
     background-repeat: no-repeat;
 }
 
-.login-box{
+.login-box {
     max-height: 430px;
     min-height: 360px;
 }
 
-.login-btn{
-    transition: .4s !important;
+.login-btn {
+    transition: 0.4s !important;
     background-color: var(--azul-primario);
 }
 
-.login-btn:hover{
+.login-btn:hover {
     background-color: var(--azul-links);
 }
 
@@ -108,16 +140,13 @@ h3 {
     }
 }
 
-
 @media screen and (max-width: 548px) {
     .login-box {
         width: 80%;
         height: 80%;
     }
-    h3{
-        font-size:1.6rem;
+    h3 {
+        font-size: 1.6rem;
     }
-
 }
-
 </style>
