@@ -28,7 +28,6 @@
                     <b-button
                         @click="login"
                         class="w-100 login-btn"
-                        to="/cadastro_disciplina"
                         >Acessar</b-button
                     >
                 </div>
@@ -52,17 +51,18 @@ export default {
                 localStorage.setItem("authToken", token);
             }
         },
-
         login() {
             const body = {
                 email: this.email,
                 password: this.password
             };
+
             api.post('/login', body).then(response => {
+                console.log(response.data.data)
                 this.storeToken(response.data.data.token)
             })
-         
         }
+        
     }
 };
 </script>

@@ -236,7 +236,6 @@
 </template>
 
 <script>
-
 export default {
     data() {
         return {};
@@ -245,12 +244,12 @@ export default {
         callApi() {
             //token = 5|Y48kCaXfSvNaJIW1WpxXCQzd3Hag0EwQnW859VwQ
             const url = new URL(
-                "https://portal-das-disciplinas.herokuapp.com/public/api/v1/disciplines"
+                "https://portal-das-disciplinas.herokuapp.com/api/v1/disciplines"
             );
 
             let headers = {
                 Authorization:
-                    "Bearer 5|Y48kCaXfSvNaJIW1WpxXCQzd3Hag0EwQnW859VwQ",
+                    "Bearer 20|GMpmc62y8JwkPLknDbDBxzPPS077E9BSufaYE1Nt",
                 "Content-Type": "application/json",
                 Accept: "application/json"
             };

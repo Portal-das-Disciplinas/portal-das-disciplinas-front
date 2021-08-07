@@ -1,15 +1,17 @@
 import axios from 'axios';
 
-let url = 'https://portal-das-disciplinas.herokuapp.com/public/api/v1'
-const headers = {
+let url = 'https://portal-das-disciplinas.herokuapp.com/api/v1'
+let headers = {
     "Content-Type": "application/json",
     Accept: "application/json"
 }
 
 function getToken() {
     if (process.browser) {
-        localStorage.getItem("authToken");
+        return localStorage.getItem("authToken");
     }
+    console.log(localStorage.getItem("authToken"))
+    
 }
 const headers_post = {
         "Authorization": `Bearer ${getToken()}`,
@@ -18,14 +20,17 @@ const headers_post = {
     
 }
 const api =  {
-
-    get(endpoint, body){
-        return axios.get(url+endpoint,body,headers)
+    getToken: getToken(),
+    get(endpoint){
+        if(getToken()){
+            headers = Object.assign(headers,{"Authorization": `Bearer ${getToken()}`})
+            console.log(headers)
+        }
+        return axios.get(url+endpoint,{headers:headers})
     },
 
     post(endpoint, body){
         return axios.post(url+endpoint,body,headers_post)
     }
 }
-
 export default api
