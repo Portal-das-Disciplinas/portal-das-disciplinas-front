@@ -30,11 +30,12 @@
           <p class="gallery-description mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati possimus eos expedita eum veritatis quasi quae architecto exercitationem molestiae tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
         </div>
 			</b-row>
+
+      {{data}}
       <!--<hr class="index-100 p-relative index-100 hr-cards w-100">-->
 			<b-row>
-				<b-col v-for="item in items" :key="item" class='d-flex flex-wrap'>
-
-          <Card-alt class="my-3" Professor="Francisco Carlos" Name="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati possimus eos expedita eum veritatis quasi quae architecto exercitationem molestiae tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit." Synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati possimus eos expedita eum veritatis quasi quae architecto exercitationem molestiae tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit."/>
+				<b-col v-for="item in data" :key="item" class='d-flex flex-wrap'>
+          <Card-alt class="my-3" :Professor="item.professor" Name="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati possimus eos expedita eum veritatis quasi quae architecto exercitationem molestiae tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit." Synopsis="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati possimus eos expedita eum veritatis quasi quae architecto exercitationem molestiae tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit."/>
         
         </b-col>
 			</b-row>
@@ -53,12 +54,15 @@ export default {
 
   data(){
     return{
-		  items: ['A', 'B', 'C', 'D', 'E', 'F']
-
+      data: []
     }
-    
   },
+
   methods:{
+
+    // ACCESS 
+
+
     decreaseFontSize(){
       document.getElementsByTagName('html')[0].style.fontSize = '80%'
     },
@@ -67,7 +71,33 @@ export default {
     },
     resetFontSize(){
       document.getElementsByTagName('html')[0].style.fontSize = '100%'
+    },
+
+
+
+    // Fetching Data
+
+    fetchMainData(){
+      const url = new URL("https://portal-das-disciplinas.herokuapp.com/api/v1/disciplines");
+
+      let headers = {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+      }
+
+      fetch(url, {
+        method: "GET",
+        headers,
+      })
+      .then((response) => response.json())
+      .then((datap) => this.data = datap)
     }
+
+
+  },
+
+  created(){
+    this.fetchMainData()
   }
 }
 </script>

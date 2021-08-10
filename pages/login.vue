@@ -10,9 +10,9 @@
                     <b-form-input
                         id="email"
                         placeholder="Email"
-                        required
                         type="email"
                         v-model="email"
+                        required
                     ></b-form-input>
                     <label for="email">Senha</label>
                     <b-form-input
@@ -61,6 +61,8 @@ export default {
                 console.log(response.data.data)
                 this.storeToken(response.data.data.token)
             })
+
+            window.location.href = '/'
         }
         
     }
